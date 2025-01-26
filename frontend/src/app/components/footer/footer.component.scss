@@ -1,0 +1,29 @@
+.footer-page {
+  width: 100%;
+
+  .box-footer-container {
+    column-gap: 2.5rem;
+
+    .box-footer-content:nth-of-type(2) {
+      flex: 1 1 550px;
+    }
+
+    .box-footer-content {
+      flex: 1 1 250px;
+
+      .box-footer-inputs:not(:last-of-type) {
+        margin-bottom: 1.05rem;
+
+        .footer-input {
+          width: 100%;
+          padding: 1.15rem 0.85rem;
+          outline: none;
+          border: 2px solid var(--black-color);
+          border-radius: 3px;
+          font: var(--heading6-regular);
+          color: var(--zinc-400);
+        }
+      }
+    }
+  }
+}

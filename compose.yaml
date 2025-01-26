@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: ./frontend
+      dockerfile: docker/Dockerfile
+    container_name: frontend_portfolio_v1
+    tty: true
+    environment:
+      NODE_ENV: development
+    ports:
+      - 4200:4200
+    networks:
+      - portfolio_v1
+
+networks:
+  portfolio_v1:
+    driver: bridge
