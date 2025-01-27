@@ -6,7 +6,7 @@ services:
     container_name: frontend_portfolio_v1
     tty: true
     environment:
-      NODE_ENV: development
+      NODE_ENV: ${NODE_ENV}
     ports:
       - 4200:4200
     networks:
