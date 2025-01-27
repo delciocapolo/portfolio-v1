@@ -2,8 +2,8 @@
 
 echo "Current NODE_ENV is: $NODE_ENV"
 
-npx ng analytics off
-echo "Angular analytics is off"
+# npx ng analytics off
+# echo "Angular analytics is off"
 
 if [ "$NODE_ENV" = "production" ]; then
     echo "Running production Angular Application"

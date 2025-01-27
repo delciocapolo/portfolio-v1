@@ -44,7 +44,7 @@ jobs:
 
       - name: Test Application
         run: |
-          curl -f http://localhost:4200 || (echo "Server not responding!" && exit 1)
+          curl -f http://localhost:4200 || (echo "server is not running" && exit 1)
 
       - name: Stop and Clean Services
         if: always()
