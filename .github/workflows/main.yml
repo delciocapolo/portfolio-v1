@@ -28,7 +28,7 @@ jobs:
 
       - name: Set Environment Variables
         run: |
-          echo "${{ secrets.ENV_VARS }}" > env.json
+          echo '${{ secrets.ENV_VARS }}' > env.json
           jq -r 'to_entries | .[] | "\(.key)=\(.value)"' env.json > .env
 
       - name: Build and Run Services
