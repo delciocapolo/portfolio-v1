@@ -5,11 +5,11 @@ on:
     branches:
       - main
 jobs:
-  test:
+  build-and-run:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Cache Docker layers
         uses: actions/cache@v3
