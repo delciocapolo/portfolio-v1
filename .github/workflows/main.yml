@@ -32,7 +32,7 @@ jobs:
           jq -r 'to_entries | .[] | "\(.key)=\(.value)"' env.json > .env
 
       - name: Debug JSON
-        run: cat env.json
+        run: cat .env
 
       - name: Build and Run Services
         run: |
