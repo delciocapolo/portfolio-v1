@@ -11,6 +11,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set Git default branch to main
+        run: git config --global init.defaultBranch main
+
       - name: Cache Docker layers
         uses: actions/cache@v3
         with:
@@ -25,7 +28,7 @@ jobs:
 
       - name: Build and Run Services
         run: |
-          docker-compose -f compose.yml up --build -d
+          docker-compose -f compose.yaml up --build -d
 
       - name: Check Application Logs
         run: |
