@@ -31,20 +31,28 @@ jobs:
           echo '${{ secrets.ENV_VARS }}' > env.json
           jq -r 'to_entries | .[] | "\(.key)=\(.value)"' env.json > .env
 
-      - name: Debug JSON
-        run: cat .env
-
       - name: Build and Run Services
         run: |
           docker-compose -f compose.yaml up --build -d
 
+      - name: Debug Container State
+        run: docker ps -a
+
+      - name: Wait for Angular App to Start
+        run: |
+          for i in {1..30}; do
+            echo "Waiting for server to start... Attempt $i"
+            curl -f http://localhost:4200 && break
+            sleep 5
+          done
+          if [ "$i" -eq 30 ]; then
+            echo "Server did not start in time"
+            exit 1
+          fi
+
       - name: Check Application Logs
         run: |
           docker-compose logs
-
-      - name: Test Application
-        run: |
-          curl -f http://localhost:4200 || (echo "server is not running" && exit 1)
 
       - name: Stop and Clean Services
         if: always()
