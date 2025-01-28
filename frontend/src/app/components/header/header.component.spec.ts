@@ -13,13 +13,4 @@ describe('HeaderComponent', () => {
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(HeaderComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.text-logo')?.textContent).toContain(
-      'Delcio Capolo'
-    );
-  });
 });

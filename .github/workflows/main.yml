@@ -44,17 +44,14 @@ jobs:
       - name: Debug Container frontend_portfolio_v1 Logs
         run: docker logs frontend_portfolio_v1
 
-      - name: Wait for Angular App to Start
+      - name: Run tests
         run: |
-          for i in {1..30}; do
-            echo "Waiting for server to start... Attempt $i"
-            curl -f http://localhost:4200 && break
-            sleep 5
-          done
-          if [ "$i" -eq 30 ]; then
-            echo "Server did not start in time"
-            exit 1
-          fi
+          npm run test:headless
+
+      - name: Build
+        if: success()
+        run: |
+          npm run build:prod
 
       - name: Check Application Logs
         run: |

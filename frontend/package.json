@@ -7,7 +7,9 @@
     "build": "CI=false && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:frontend": "node dist/frontend/server/server.mjs"
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
+    "serve:ssr:frontend": "node dist/frontend/server/server.mjs",
+    "build:prod": "npm run build && npm run serve:ssr:frontend"
   },
   "private": true,
   "dependencies": {
