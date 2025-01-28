@@ -36,7 +36,10 @@ jobs:
           docker-compose -f compose.yaml up --build -d
 
       - name: Debug Container State
-        run: docker ps -a
+        run: docker ps
+
+      - name: Debug Container frontend_portfolio_v1 Logs
+        run: docker logs frontend_portfolio_v1
 
       - name: Wait for Angular App to Start
         run: |
