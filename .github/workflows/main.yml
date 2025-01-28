@@ -39,7 +39,7 @@ jobs:
         run: docker ps
 
       - name: Turn off Angular Analytics
-        run: docker exec -it frontend_portfolio_v1 sh -c "npx ng analytics off"
+        run: docker exec frontend_portfolio_v1 sh -c "npx ng analytics off"
 
       - name: Debug Container frontend_portfolio_v1 Logs
         run: docker logs frontend_portfolio_v1
