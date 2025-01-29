@@ -1,8 +1,9 @@
 services:
-  app:
+  web:
     build:
       context: ./frontend
       dockerfile: docker/Dockerfile
+    image: delciocapolo/frontend-portfolio:v1
     container_name: frontend_portfolio_v1
     tty: true
     environment:
