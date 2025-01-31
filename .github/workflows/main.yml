@@ -48,12 +48,6 @@ jobs:
         run: |
           docker exec frontend_portfolio_v1 sh -c "npm run test:ci"
 
-      - name: Upload cobertura de testes
-        uses: codecov/codecov-action@v3
-        with:
-          files: ./coverage/lcov.info
-          fail_ci_if_error: true
-
       - name: Check Application Logs
         run: |
           docker-compose logs
