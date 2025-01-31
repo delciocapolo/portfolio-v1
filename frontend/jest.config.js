@@ -6,6 +6,8 @@ export default {
   coverageDirectory: "coverage",
   moduleNameMapper: {
     "^@app/(.*)$": "<rootDir>/src/app/$1",
+    "^@(components|services|models|utils)/(.*)$": "<rootDir>/src/app/$1/$2",
     "^@env/(.*)$": "<rootDir>/src/environments/$1",
   },
+  testEnvironment: "@happy-dom/jest-environment",
 };
