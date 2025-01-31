@@ -40,6 +40,12 @@ jobs:
         run: |
           docker exec frontend_portfolio_v1 sh -c "npm run test:ci"
 
+      - name: Upload do JUnit XML
+        uses: actions/upload-artifact@v3
+        with:
+          name: junit-report
+          path: coverage/junit.xml
+
       - name: Check Application Logs
         run: |
           docker-compose logs
