@@ -1,6 +1,6 @@
 import { TitleCasePipe, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { HeaderComponent } from '@components/header/header.component';
+import { HeaderComponent } from '@app/components/header/header.component';
 import {
   InterfaceExperienceList,
   InterfaceHeaderHomePageNameIcons,
