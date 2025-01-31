@@ -1,0 +1,18 @@
+{
+  "public": true,
+  "name": "Portfolio",
+  "devCommand": "node dist/frontend/server/server.mjs",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api"
+    },
+    {
+      "functions": {
+        "api/index.js": {
+          "includeFiles": "dist/frontend/browser/**"
+        }
+      }
+    }
+  ]
+}
