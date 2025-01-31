@@ -4,7 +4,7 @@ export default {
   testMatch: ["**/__tests__/**/*.spec.ts", "**/?(*.)+(spec|test).ts"],
   reporters: [
     "default",
-    ["jest-junit", { outputDirectory: "coverage", outputName: "junit.xml" }],
+    ["jest-junit", { outputDirectory: "test-runner", outputName: "junit.xml" }],
   ],
   coverageDirectory: "coverage",
   moduleNameMapper: {
