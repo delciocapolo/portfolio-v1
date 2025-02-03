@@ -137,10 +137,6 @@ $padding-parent: 3.5rem 0;
 
                 & > .box-skill-logo > [aria-label="icon"] {
                   color: var(--white-color);
-
-                  & > svg > g {
-                    fill: red !important;
-                  }
                 }
               }
             }
