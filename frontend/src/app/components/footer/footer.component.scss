@@ -1,12 +1,9 @@
 .footer-page {
   width: 100%;
+  margin-top: 10rem;
 
   .box-footer-container {
     column-gap: 2.5rem;
-
-    .box-footer-content:nth-of-type(2) {
-      flex: 1 1 550px;
-    }
 
     .box-footer-content {
       flex: 1 1 250px;
@@ -19,11 +16,45 @@
           padding: 1.15rem 0.85rem;
           outline: none;
           border: 2px solid var(--black-color);
-          border-radius: 3px;
+          border-radius: var(--border-radius-default);
           font: var(--heading6-regular);
           color: var(--zinc-400);
         }
       }
+
+      .box-footer-inputs:last-of-type {
+        flex-wrap: wrap;
+
+        .btn-submit-touch {
+          flex: 1 1 200px;
+          font: var(--heading5-semibold);
+          color: var(--white-color);
+          background-color: var(--black-002-color);
+          border-radius: var(--border-radius-default);
+          padding: 1rem 3rem;
+          height: 60px;
+        }
+
+        gap: 1.5rem;
+
+        .list-box-touch {
+          gap: 1.5rem;
+          .item-touch {
+            border-radius: var(--border-radius-default);
+
+            .link-touch {
+              width: 65px;
+              height: 60px;
+              border-radius: var(--border-radius-default);
+              border: 2px solid var(--black-color);
+            }
+          }
+        }
+      }
+    }
+
+    .box-footer-content:nth-of-type(2) {
+      flex: 1 1 750px;
     }
   }
 }

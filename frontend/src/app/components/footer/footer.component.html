@@ -32,12 +32,33 @@
           name="footer-costumer-problem"
           id=""
           rows="6"
+          required
           placeholder="Como posso ajudar?*"
           class="footer-input"
         ></textarea>
       </div>
-      <div class="box-footer-inputs"></div>
+      <div class="box-footer-inputs flex justify-start align-center">
+        <button type="submit" class="btn-submit-touch" name="btn-submit-touch">
+          Entrar em Contacto
+        </button>
+        <ul class="list-box-touch flex align-center" role="list">
+          @for (touch of headerHomePageNameIcons; track $index) {
+          <li class="item-touch">
+            <a
+              routerLink="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-touch flex justify-center align-center"
+            >
+              <ng-icon name="{{ touch.nameIcon }}" size="25" />
+            </a>
+          </li>
+          }
+        </ul>
+      </div>
     </form>
-    <div class="box-footer-content"></div>
+    <div class="box-footer-content">
+      <div class="flex justify-center align-center">delcio</div>
+    </div>
   </div>
 </footer>
