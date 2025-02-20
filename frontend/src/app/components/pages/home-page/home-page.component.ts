@@ -90,7 +90,8 @@ export class HomePageComponent {
 
   public experienceList: InterfaceExperienceList[] = [
     {
-      companyLogo: '/experience-logos/medicare.png',
+      companyLogo:
+        'https://xuffprxbazgwqermnvqs.supabase.co/storage/v1/object/sign/small-files/medicare.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzbWFsbC1maWxlcy9tZWRpY2FyZS5wbmciLCJpYXQiOjE3NDAwNTA1NjQsImV4cCI6MTc3MTU4NjU2NH0.a5eOUCDJ47Od-6_D8klSV5y_akWI0DlcX6b13LA57bI',
       companyName: 'Medicare Angola',
       companyLink: 'https://medicare.ao/',
       start_period: '2024-02-12',
@@ -99,7 +100,8 @@ export class HomePageComponent {
         'Durante minha gestão na Medicare, ocupei a função de Arquiteto de Software, onde desempenhei um papel fundamental na formação da arquitetura de projetos de software de missão crítica. Responsável por projetar sistemas escaláveis e eficientes, forneci liderança técnica a uma equipe multifuncional.',
     },
     {
-      companyLogo: '/experience-logos/buka.png',
+      companyLogo:
+        'https://xuffprxbazgwqermnvqs.supabase.co/storage/v1/object/sign/small-files/buka.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzbWFsbC1maWxlcy9idWthLnBuZyIsImlhdCI6MTc0MDA1MDU4NCwiZXhwIjoxNzcxNTg2NTg0fQ.ZxR4W6kTn6kYtPSACsHdhVEfh7_FuZRdhEN9upTGMAQ',
       companyName: 'Buka',
       companyLink: 'https://bukaapp.net/',
       start_period: '2023-11-06',
