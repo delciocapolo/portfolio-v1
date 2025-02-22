@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0 --port 4200 --poll 2000",
-    "build": "ng build --configuration production",
+    "build": "ng build --prod --output-path docs --base-href /frontend/",
     "watch": "ng build --watch --configuration development",
     "test": "jest",
     "test:ci": "jest --ci --coverage",
