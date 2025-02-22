@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/portfolio-v1',
+  basePath: '/',
   supportedLocales: {
   "en-US": ""
 },
