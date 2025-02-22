@@ -141,12 +141,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "baseHref": "/portfolio-v1/",
-            "dir": "dist/frontend",
-            "repo": "https://github.com/delciocapolo/portfolio-v1.git"
-          }
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
