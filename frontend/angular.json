@@ -27,11 +27,6 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-              {
-                "glob": "**/*.{woff,woff2,ttf,eot,svg}",
-                "input": "node_modules/@fontsource-variable/sora/files",
-                "output": "/files/"
               }
             ],
             "styles": [
