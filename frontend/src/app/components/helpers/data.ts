@@ -5,9 +5,9 @@ export const linksMedia = [
     nameIcon: 'ionLogoLinkedin',
   },
   {
-    name: 'Facebook',
-    url: 'https://www.facebook.com/delciocapolo/',
-    nameIcon: 'ionLogoFacebook',
+    name: 'Github',
+    url: 'https://github.com/delciocapolo/',
+    nameIcon: 'ionLogoGithub',
   },
   {
     name: 'Medium',
